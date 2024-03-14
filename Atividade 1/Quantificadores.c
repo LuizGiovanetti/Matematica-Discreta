@@ -12,7 +12,7 @@ static void verificarPositivos(int *v, int n, int *verificar)
 
         for(int i = 0; i < n; i++)
         {
-            if(v[i] % 2 == 0)
+            if(v[i] > 0)
             {
                 existeP = 1;
                 todosP++;
