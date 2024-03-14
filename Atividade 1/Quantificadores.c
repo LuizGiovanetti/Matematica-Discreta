@@ -61,17 +61,18 @@ static void verificarPrimo(int *v, int n, int *verificar)
         for(int i = 0; i < n; i++)
         {
             validar = 0;
+
             for(int j = v[i] - 1; j > 1; j--)
             {
                 if(v[i] % j == 0)
                 {
                     existeNP = 1;
-                    todosNP++;
                     (*verificar)++;
                     validar = 1;
                     break;
                 }
             }
+
             if((!validar) && (v[i] > 1))
             {
                 testar++;
@@ -79,8 +80,14 @@ static void verificarPrimo(int *v, int n, int *verificar)
                 todosP++;
                 (*verificar)++;
             }
+
+            if((validar) && (existeNP))
+            {
+                todosNP++;
+                (*verificar)++;
+            }
         }
-        
+
         int *primos = malloc(sizeof(int) * testar);
         int num = 0;
 
