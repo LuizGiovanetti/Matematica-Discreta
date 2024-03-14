@@ -72,7 +72,7 @@ static void verificarPrimo(int *v, int n, int *verificar)
                     break;
                 }
             }
-            if((!validar) && (v[i] > 0))
+            if((!validar) && (v[i] > 1))
             {
                 testar++;
                 existeP = 1;
@@ -97,7 +97,7 @@ static void verificarPrimo(int *v, int n, int *verificar)
                 }   
             }
 
-            if((!validar) && v[i] > 0)
+            if((!validar) && v[i] > 1)
             {
                 primos[num] = v[i];
                 num++;
