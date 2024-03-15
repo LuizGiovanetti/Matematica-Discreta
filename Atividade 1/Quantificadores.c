@@ -136,7 +136,7 @@ int main(void)
     int i = 0;
     int verificar = 0;
     
-    arq = fopen("c:\\Users\\User\\Desktop\\numero.txt", "rt");
+    arq = fopen("c:\\Users\\User\\Desktop\\numero67.txt", "rt");
 
     if(arq == NULL)
     {
@@ -191,3 +191,16 @@ int main(void)
 
     return 0;
 }
+
+
+/*
+Saida:
+Existe numero nao positivo.
+
+Ha numero primo:
+13 17
+
+Contem 17 numeros no arquivo.
+
+Foram feitas 99 verificacoes.
+*/
